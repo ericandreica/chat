@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/chat",
+            "outputPath": "docs/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -124,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "chat"
+    }
+  },
+  "defaultProject": "chat",
+  "cli": {
+    "analytics": false
+  }
 }

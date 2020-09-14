@@ -1,1 +1,7 @@
+<ngx-loading [show]="loading" [template]=""></ngx-loading>
+<div class="alert-wrapper" *ngIf="showNotification">
+    <alert *ngFor="let alert of alerts" [type]="alert.type"  dismissOnTimeout="4000" class="text-center">
+        {{ alert.text }}
+    </alert>
+</div>
 <router-outlet></router-outlet>

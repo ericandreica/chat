@@ -1,7 +1,7 @@
 @import 'variables';
 @import '../../node_modules/bootstrap/scss/bootstrap';
 
-.container{
+.container-wrapper{
     height: calc(100vh - 80px) !important;
 }
 
@@ -15,4 +15,10 @@ body{
 
 button{
     width: 100%;
+    &.btn{
+        border-radius: 0;
+        &:focus{
+            box-shadow: none;
+        }
+    }
 }

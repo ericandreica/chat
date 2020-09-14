@@ -1,0 +1,12 @@
+@import "../styles/variables.scss";
+
+.alert-wrapper{
+    position: relative;
+
+    ngb-alert, alert{
+        top: $navbar-height;
+        position: absolute;
+        width: 100%;
+        z-index: 100;
+    }
+}
